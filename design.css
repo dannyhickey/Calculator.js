@@ -1,13 +1,19 @@
 
+#background
+{
+    background: black ;
+}
+
 #calculator
 {
     width: 250px;
     height: 95%;
     border: 1px solid black;
     text-align: center;
-    background: lightblue;
+    background: darkmagenta;
     margin: 150px auto;
     box-shadow: 0px 0px 100px gray;
+    border-radius: 20px;
 }
 
 #numberDisplay
@@ -17,10 +23,11 @@
     width: 90%;
     height: 30px;
     border: 1px solid yellow;
-    box-shadow: 0px 0px 30px yellow;
+    box-shadow: 0px 0px 10px yellow;
     text-align: right;
     font: 20px bold;
-    color: orange;
+    color: darkred;
+    border-radius: 10px;
 }
 
 #keys
@@ -32,6 +39,7 @@
     margin-bottom: 20px;/*Space betweent keys bottom*/
     box-shadow: 0px 0px 20px gray;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #keys:hover
@@ -50,6 +58,7 @@
     margin-bottom: 20px;/*Space betweent keys bottom*/
     box-shadow: 0px 0px 20px gray;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #equals:hover

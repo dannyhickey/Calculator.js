@@ -4,6 +4,8 @@
 
 var numberDisplay = document.getElementById('numberDisplay');
 
+/*Takes what ever is in the numberDisplay screen
+* and adds a blank string to it when 'c' is pressed*/
 function addIt(x)
 {
     numberDisplay.value +=x;
@@ -13,13 +15,17 @@ function addIt(x)
     }
 }
 
+/*evaluates the equation within the x variable then passes
+* the answer back to numberDisplay.value when '=' button is pressed*/
 function answer()
 {
-    x = numberDisplay.value;
+    var x = numberDisplay.value;
     x = eval(x);
     numberDisplay.value = x;
 }
 
+/*erases the last string entry each time the
+* '<--' button is pressed*/
 function backSpace()
 {
     var num = numberDisplay.value;
@@ -28,6 +34,8 @@ function backSpace()
     numberDisplay.value = newNumber;
 }
 
+/*Takes in the value from number display to x and its power is stored in y
+ * which is 2 in the index.html file. Performed when the 'X^2' button is pressed */
 function squared(y)
 {
     var x = numberDisplay.value;
